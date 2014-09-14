@@ -15,12 +15,12 @@ public class RandomInput implements MessageInput {
 
     @Override
     public String getMessage() {
-    String [] arr = {"Welcome to our website!", "Go Packers Go!", "Go Brewers Go!", "Advanced Java is Awesome!"};
+    String [] messages = {"Welcome to our website!", "Go Packers Go!", "Go Brewers Go!", "Advanced Java is Awesome!", "Random message generator!"};
          Random r = new Random();
     
-    int select = r.nextInt(arr.length);
-     System.out.println("Random String selected: "); 
-          return arr[select];
+    int select = r.nextInt(messages.length);
+       
+          return messages[select];
     }
     
     

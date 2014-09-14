@@ -16,7 +16,7 @@ public class MessageService {
      */ 
     public static void main(String[] args) {
         MessageInput input = new RandomInput();
-        MessageOutput output = new GUIOutput();
+        MessageOutput output = new KeyboardOutput();
         
         
         MessageManager m = new MessageManager(input,output);
