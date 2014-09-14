@@ -15,8 +15,8 @@ public class MessageService {
      * @param args the command line arguments
      */ 
     public static void main(String[] args) {
-        MessageInput input = new KeyboardInput();
-        MessageOutput output = new KeyboardOutput();
+        MessageInput input = new RandomInput();
+        MessageOutput output = new GUIOutput();
         
         
         MessageManager m = new MessageManager(input,output);
