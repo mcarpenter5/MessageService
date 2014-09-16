@@ -16,7 +16,7 @@ public class RandomInput implements MessageInput {
     @Override
     public String getMessage() {
     String [] messages = {"Welcome to our website!", "Go Packers Go!", "Go Brewers Go!", "Advanced Java is Awesome!", "Random message generator!"};
-         Random r = new Random();
+         Random r = new Random(System.nanoTime());
     
     int select = r.nextInt(messages.length);
        
